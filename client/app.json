@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/air_quality/air_quality",
+    "pages/air_quality/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "社区宝",
+    "navigationBarTextStyle": "white"
+  }
+}
