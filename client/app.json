@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/index/index2",
     "pages/index/result",
     "pages/addCgi/addCgi"
   ],

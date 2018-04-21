@@ -1,0 +1,5 @@
+<!--pages/index/index2.wxml-->
+<text>pages/index/index2.wxml</text>
+<view wx:for="{{result}}"  wx:key="index"> 
+{{item.business.mystock[0].email}}
+</view>
