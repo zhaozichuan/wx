@@ -8,7 +8,9 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: ''
+        requestResult: '',
+        resJson: {},
+        test : ''
     },
 
     // 用户登录示例
@@ -67,13 +69,26 @@ Page({
         util.showBusy('请求中...')
         var that = this
         var options = {
-            url: config.service.requestUrl,
+            //url: config.service.requestUrl,
+            url: 'http://zhaozichuan.iask.in/q1?code=600030',
             login: true,
             success (result) {
                 util.showSuccess('请求成功完成')
                 console.log('request success', result)
+                //zzc add
+               // JSON.parse(result.data)
+               wx.setStorage({
+                 key: 'result',
+                 data: result.data,
+               })
                 that.setData({
-                    requestResult: JSON.stringify(result.data)
+                    requestResult: JSON.stringify(result.data),
+                    //test:'ss'
+                    resJson:result.data
+                })
+
+                wx.navigateTo({
+                  url: './result?zzx="aa"',
                 })
             },
             fail (error) {

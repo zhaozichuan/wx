@@ -1,0 +1,8 @@
+<!--pages/index/result.wxml-->
+<text >pages/index/result.wxml</text>
+
+ <view class="tunnel-text" wx:if="{{zzx}}">
+    <text class="request-text">{{'请求结果：' + result1.business.Stock[0].name}}
+    {{zzx}}
+    </text>
+        </view>
