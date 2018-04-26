@@ -122,3 +122,12 @@ page {
     line-height: 36rpx;
     word-break: break-all;
 }
+
+
+.reg {
+    height: auto;
+    padding: 0 0 0 40rpx;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
