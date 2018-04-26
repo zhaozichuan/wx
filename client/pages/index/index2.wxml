@@ -1,9 +1,9 @@
 <!--pages/index/index2.wxml-->
-<text>pages/index/index2.wxml</text>
+<text>my stock</text>
 <view wx:for="{{result.business.myStock}}"  wx:key="index"> 
-{{item.createTime}}
+{{item.stockCode}}{{item.stockName}}
 </view>
 
 <view > 
-{{result.business.myStock[0].createTime}}
+
 </view>

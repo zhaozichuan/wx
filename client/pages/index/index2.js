@@ -15,8 +15,8 @@ Page({
     var that = this;
     
     wx.request({
-      url: 'http://zhaozichuan.iask.in/myStockList?mid=1&userId=1', //仅为示例，并非真实的接口地址
-      
+     
+      url: 'http://127.0.0.1:9000/myStockList?mid=1&userId=1', //仅为示例，并非真实的接口地址
       header: {
         'content-type': 'application/json' // 默认值
       },
