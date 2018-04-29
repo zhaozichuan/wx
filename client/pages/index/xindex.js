@@ -13,6 +13,28 @@ Page({
     test: ''
   },
 
+  getuserInfo: function (e) {
+    console.log(e.detail.encryptedData)
+    console.log(e.detail.code)
+    console.log(e.detail.iv)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    console.log(e.detail.signature)
+    
+    wx.setStorageSync('encryptedData', e.detail.encryptedData);
+    wx.setStorageSync('code', e.detail.code);
+    wx.setStorageSync('rawData', e.detail.rawData);
+    wx.setStorageSync('signature', e.detail.signature);
+    
+    
+    wx.setStorageSync('iv', e.detail.iv);
+    wx.setStorageSync('userInfo', e.detail.userInfo);
+    this.setData({
+      
+      //
+    })
+  },
+
   // 用户登录示例
   login: function () {
     if (this.data.logged) return

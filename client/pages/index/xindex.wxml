@@ -13,9 +13,16 @@
   </view>
  <view class="reg">
  <!-- view  wx:if="{{logged}}" -->
+  <view class="reg">
+      <open-data type="userAvatarUrl"></open-data>
+  </view>
+       <open-data type="userNickName" ></open-data>
         <view class="reg">电话号码：</view>
         <input  type="number" value="aaaa" auto-focus/>
- 
+      
+
+<open-data type="userGender" lang="zh_CN"></open-data>
    
  </view>
+      <button open-type='getUserInfo' bindgetuserinfo="getuserInfo">bbb</button>
 </view>

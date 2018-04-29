@@ -1,0 +1,63 @@
+<!--pages/index/login.wxml
+<text>pages/index/login.wxml</text>
+-->
+<view class="answer-body">
+  <!-- 用户登录测试 -->
+  <!-- <view class="userinfo" bindtap="login">
+    <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}" background-size="cover"></image>
+    <view>
+      <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击登录或者注册'}}</text>
+     
+    </view>
+
+    
+  </view>
+  -->
+  <view class="reg">
+    <!-- view  wx:if="{{logged}}" -->
+    <view class="wa-item wa-item-ava">
+     <!-- <image class="item-img-round" src="../../images/user.jpg"></image> 
+     -->
+      <open-data   class="item-img-round" type="userAvatarUrl"></open-data>
+      <open-data type="userNickName"></open-data>
+    </view>
+
+    <!-- open-data type="userAvatarUrl"></open-data> 
+
+    <view class="wa-item">
+      <open-data type="phoneNumber">13810169858</open-data>
+    </view>
+    -->
+    <view class="wa-input-stacked">
+      <text class="wa-input-label">电话号码：</text>
+      <input class="wa-input"  value="13810169858" />
+    </view>
+    <view class="wa-input-stacked">
+      <text class="wa-input-label">您的小区:</text>
+      <input class="wa-input" placeholder="您的小区：" value="" />
+    </view>
+    
+
+    <view class="wa-input-stacked">
+      <text class="wa-input-label">您的单元号:</text>
+      <input class="wa-input" placeholder="小区单元：" value="" />
+    </view>
+
+    <button open-type='getUserInfo' bindgetuserinfo="getUserInfo">注册或者登陆</button>
+
+   <!--  <button bindtap="getUserInfo1">{{result.errCode}}注册或者登陆</button>
+
+      <view  wx:if="{{result.errCode=='0'}}">
+        <text>注册成功</text>
+      </view>
+
+      -->
+    <!--
+    <open-data type="userGender" lang="zh_CN"></open-data>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取电话 </button>
+  </view>
+  <button open-type='getUserInfo' bindgetuserinfo="getuserInfo">注册或者登陆</button>
+
+-->
+  </view>
+</view>
